@@ -1,0 +1,144 @@
+.menu{
+	.text-menu{
+		text-align: center;
+		position: relative;
+		padding-top: 35px;
+		margin: 0 112px;
+		h3{
+			color: #404040;
+			font-size: 35px;
+			padding-bottom: 28px;
+			font-weight: 300;
+		}
+		p{
+			color: #636363;
+			font-size: 17px;
+			line-height: 1.5;
+		}
+	}
+	.menu-list{
+		position: relative;
+		margin-top: 90px;
+		margin-bottom: 42px;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		li{
+			width: 179px;
+			height: 179px;
+			border-radius: 50%;
+			text-align: center; 
+			z-index: 3;
+			position: relative;
+			&:nth-child(1){
+				background-color: #4eb9f4;
+				.images-menu{
+					margin-top: 40px;
+				}
+			}
+			&:nth-child(2){
+				background-color: #6fc125;
+				.images-menu{
+					margin-top: 53px;
+				}
+			}
+			&:nth-child(3){
+				background-color: #ff5649;
+				.images-menu{
+					margin-top: 40px;
+					margin-left: 12px;
+				}
+			}
+			&:nth-child(4){
+				background-color: #e48f23;
+				.images-menu{
+					margin-top: 48px;
+				}
+			}
+			.images-menu{
+				display: inline-block;
+				text-align: center; 
+				margin-bottom: 12px;
+			}
+			p{
+				color: #ffffff;
+			}
+			.text-animation{
+				display: none;
+				z-index: 1;
+				position: absolute;
+				top:0;
+				height: 90px;
+				width: 138px;
+				margin-top: 50px;
+				margin-left: 25px;
+				font-size: 12px;
+				line-height: 1.2;
+				font-weight: bold;
+				
+			}
+			&:hover{
+				.container{
+					opacity: 0.4;
+					position: relative;
+				}
+				.text-animation{
+					display: block;
+
+					
+				}				   
+			}
+		}
+	}
+}
+.border{
+	width: 100%;
+	box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+	@include display-position;
+	padding-bottom:10px;
+}
+.tab-content{
+	@include display-position;
+	width: 100%;
+	height: auto;
+	ul{
+		@include display-position; 
+		width: 100%;
+		height: auto;
+		li{
+			@include display-position; 
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+			margin-bottom: 40px;
+			margin-top: 40px;
+			.images-tab-content{
+				position: relative;
+				float: left;
+				width: 199px;
+				height: 132px;
+				margin-left: 20px;
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+			.content{
+				position: relative;
+				float: right;
+				margin-left: 25px;
+				width: 780px;
+				height: auto;
+				h3{
+					font-size: 27px;
+					font-weight: 300;
+					padding-bottom: 18px;
+				}
+				p{
+					font-size: 15px;
+					line-height: 1.5
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,400 @@
+/* SCSS Compiled */
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+*:focus {
+  outline: none; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border-style: none;
+  max-width: 100%; }
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+input, textarea, select {
+  vertical-align: middle;
+  color: #000;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+input::-webkit-input-placeholder {
+  color: #ebedec; }
+
+input:focus::-webkit-input-placeholder {
+  color: #ebedec; }
+
+/*@media*/
+/* @media (min-width: 1921px){} 													QHD \ UHD
+@media (min-width: 1600px) and (max-width: 1919px) {}	HD +
+@media (min-width: 1440px) and (max-width: 1599px) {}	macbook
+@media (min-width: 1360px) and (max-width: 1439px) {}	HD
+@media (min-width: 1280px) and (max-width: 1359px) {} IPAD2
+@media (min-width: 1024px) and (max-width: 1279px) {} IPAD
+@media (min-width: 896px) and (max-width: 1023px) {}	Ip Xs max horizontal
+@media (min-width: 812px) and (max-width: 895px) {}		Ip Xs horizontal
+@media (min-width: 768px) and (max-width: 811px) {}		Tablet
+@media (min-width: 736px) and (max-width: 767px) {}		Ip 6,7,8 Plus horizontal
+@media (min-width: 667px) and (max-width: 735px) {}		Ip 6,7,8 horizontal
+@media (min-width: 568px) and (max-width: 666px) {}		Ip 5 horizontal
+@media (min-width: 480px) and (max-width: 567px) {}		Ip 4 horizontal
+@media (min-width: 414px) and (max-width: 479px) {}		Ip 6,7,8
+@media (min-width: 320px) and (max-width: 413px) {}		Ip 4,5 */
+/*@media end*/
+/* Brand Colors ------------------------------------------------*/
+html, body {
+  height: 100%; }
+
+#wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  font-family: 'Ubuntu', sans-serif; }
+
+header {
+  width: 100%;
+  height: 590px;
+  display: block;
+  position: relative;
+  background: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 20%;
+  margin-bottom: 35px; }
+
+.layout {
+  width: 1024px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#content {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden; }
+
+main {
+  position: relative;
+  padding-bottom: 300px; }
+
+footer {
+  width: 100%;
+  display: block;
+  background-color: #292528;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.header-top {
+  width: 100%;
+  height: 90px;
+  background-color: #ffffff;
+  opacity: 0.8; }
+  .header-top .logo {
+    width: 130px;
+    height: 52px;
+    float: left;
+    margin: 20px 0 18px 34px; }
+    .header-top .logo h1 {
+      text-indent: -99999px; }
+    .header-top .logo img {
+      width: 130px;
+      height: 52px;
+      float: left; }
+  .header-top nav {
+    width: auto;
+    float: right;
+    position: relative;
+    margin-right: 46px; }
+    .header-top nav ul li {
+      display: inline-block;
+      position: relative;
+      width: auto;
+      text-transform: capitalize;
+      margin: 46px 34px 0 0;
+      font-size: 17px;
+      color: #454545; }
+      .header-top nav ul li:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+      .header-top nav ul li a {
+        cursor: pointer; }
+      .header-top nav ul li.header-login {
+        display: inline-block;
+        position: relative;
+        background-color: #de6d6e;
+        width: 87px;
+        height: 27px;
+        border-radius: 3px;
+        color: #ffffff;
+        margin: 36px 0 0 0; }
+        .header-top nav ul li.header-login:hover {
+          background-color: #c22b2c;
+          -webkit-transform: none;
+          -ms-transform: none;
+          transform: none; }
+        .header-top nav ul li.header-login a {
+          display: block;
+          margin-top: 6px; }
+          .header-top nav ul li.header-login a .login {
+            width: 13px;
+            height: 13px;
+            margin: 0 7px 0 13px;
+            float: left; }
+
+.banner {
+  display: block;
+  position: relative;
+  text-align: center; }
+  .banner .circles {
+    margin-top: 140px; }
+  .banner h2 {
+    font-size: 69px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 34px; }
+  .banner p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300; }
+
+.sub-menu {
+  display: block;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 26px; }
+  .sub-menu .sub-menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .sub-menu .sub-menu-list li {
+      width: auto;
+      height: auto;
+      text-transform: capitalize; }
+      .sub-menu .sub-menu-list li:nth-last-child {
+        width: 284px;
+        display: inline-block; }
+      .sub-menu .sub-menu-list li a {
+        display: block;
+        position: relative;
+        color: #8b8b8b;
+        font-size: 15px;
+        padding-bottom: 12px; }
+        .sub-menu .sub-menu-list li a:hover {
+          color: #ffffff; }
+      .sub-menu .sub-menu-list li h4 {
+        color: #8b8b8b;
+        font-size: 21px;
+        padding-bottom: 26px;
+        font-weight: 300; }
+      .sub-menu .sub-menu-list li .icons {
+        margin-top: 12px;
+        margin-bottom: 28px; }
+        .sub-menu .sub-menu-list li .icons .icons-list {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          position: relative;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+          .sub-menu .sub-menu-list li .icons .icons-list li {
+            position: relative;
+            width: 52px;
+            height: 52px;
+            background-color: #696b6a;
+            border-radius: 50%;
+            cursor: pointer; }
+            .sub-menu .sub-menu-list li .icons .icons-list li:hover {
+              background-color: #eda3c0; }
+            .sub-menu .sub-menu-list li .icons .icons-list li img {
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              margin: auto;
+              overflow: auto; }
+      .sub-menu .sub-menu-list li .copyright {
+        color: #8b8b8b; }
+
+.menu .text-menu {
+  text-align: center;
+  position: relative;
+  padding-top: 35px;
+  margin: 0 112px; }
+  .menu .text-menu h3 {
+    color: #404040;
+    font-size: 35px;
+    padding-bottom: 28px;
+    font-weight: 300; }
+  .menu .text-menu p {
+    color: #636363;
+    font-size: 17px;
+    line-height: 1.5; }
+
+.menu .menu-list {
+  position: relative;
+  margin-top: 90px;
+  margin-bottom: 42px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .menu .menu-list li {
+    width: 179px;
+    height: 179px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 3;
+    position: relative; }
+    .menu .menu-list li:nth-child(1) {
+      background-color: #4eb9f4; }
+      .menu .menu-list li:nth-child(1) .images-menu {
+        margin-top: 40px; }
+    .menu .menu-list li:nth-child(2) {
+      background-color: #6fc125; }
+      .menu .menu-list li:nth-child(2) .images-menu {
+        margin-top: 53px; }
+    .menu .menu-list li:nth-child(3) {
+      background-color: #ff5649; }
+      .menu .menu-list li:nth-child(3) .images-menu {
+        margin-top: 40px;
+        margin-left: 12px; }
+    .menu .menu-list li:nth-child(4) {
+      background-color: #e48f23; }
+      .menu .menu-list li:nth-child(4) .images-menu {
+        margin-top: 48px; }
+    .menu .menu-list li .images-menu {
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 12px; }
+    .menu .menu-list li p {
+      color: #ffffff; }
+    .menu .menu-list li .text-animation {
+      display: none;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      height: 90px;
+      width: 138px;
+      margin-top: 50px;
+      margin-left: 25px;
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: bold; }
+    .menu .menu-list li:hover .container {
+      opacity: 0.4;
+      position: relative; }
+    .menu .menu-list li:hover .text-animation {
+      display: block; }
+
+.border {
+  width: 100%;
+  -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+  display: block;
+  position: relative;
+  padding-bottom: 10px; }
+
+.tab-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto; }
+  .tab-content ul {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto; }
+    .tab-content ul li {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin-bottom: 40px;
+      margin-top: 40px; }
+      .tab-content ul li .images-tab-content {
+        position: relative;
+        float: left;
+        width: 199px;
+        height: 132px;
+        margin-left: 20px; }
+        .tab-content ul li .images-tab-content img {
+          width: 100%;
+          height: auto; }
+      .tab-content ul li .content {
+        position: relative;
+        float: right;
+        margin-left: 25px;
+        width: 780px;
+        height: auto; }
+        .tab-content ul li .content h3 {
+          font-size: 27px;
+          font-weight: 300;
+          padding-bottom: 18px; }
+        .tab-content ul li .content p {
+          font-size: 15px;
+          line-height: 1.5; }
